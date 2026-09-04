@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Italiano Recuperadora | Peças e Serviços para Caminhões</title>
+
+    <meta name="description"
+          content="Italiano Recuperadora - Peças, recuperação de cabine, funilaria, pintura e recuperação de peças para caminhões. Solicite pelo WhatsApp.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #f5f5f5;
+            color: #222;
+        }
+
+        /* TOPO */
+        .topbar {
+            background: #111;
+            color: #fff;
+            padding: 10px 6%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+        }
+
+        /* HEADER */
+        header {
+            background: #fff;
+            padding: 18px 6%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: 900;
+            color: #d71920;
+            line-height: 1;
+        }
+
+        .logo span {
+            display: block;
+            color: #111;
+            font-size: 13px;
+            letter-spacing: 2px;
+            margin-top: 5px;
+        }
+
+        .search {
+            flex: 1;
+            max-width: 550px;
+            display: flex;
+        }
+
+        .search input {
+            width: 100%;
+            padding: 13px 16px;
+            border: 1px solid #ddd;
+            border-radius: 8px 0 0 8px;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .search button {
+            border: none;
+            background: #d71920;
+            color: white;
+            padding: 0 22px;
+            border-radius: 0 8px 8px 0;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .header-whatsapp {
+            color: #111;
+            text-decoration: none;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        /* MENU */
+        nav {
+            background: #181818;
+            padding: 13px 6%;
+            display: flex;
+            justify-content: center;
+            gap: 35px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #d71920;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 520px;
+            background:
+                linear-gradient(rgba(0,0,0,.68), rgba(0,0,0,.68)),
+                url("https://images.unsplash.com/photo-1586191582056-df6b9d5d1a4f?auto=format&fit=crop&w=1800&q=80")
+                center/cover;
+            display: flex;
+            align-items: center;
+            padding: 70px 6%;
+            color: #fff;
+        }
+
+        .hero-content {
+            max-width: 750px;
+        }
+
+        .hero h1 {
+            font-size: clamp(38px, 5vw, 65px);
+            line-height: 1.05;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #d71920;
+        }
+
+        .hero p {
+            font-size: 19px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #eee;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 15px 24px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            border: none;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .btn-red {
+            background: #d71920;
+            color: #fff;
+        }
+
+        .btn-dark {
+            background: #fff;
+            color: #111;
+        }
+
+        /* GERAL */
+        section {
+            padding: 75px 6%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-title h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #666;
+            font-size: 16px;
+        }
+
+        /* SOLICITAÇÃO */
+        .request-section {
+            background: #fff;
+        }
+
+        .request-box {
+            max-width: 1150px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: .85fr 1.15fr;
+            gap: 40px;
+            align-items: start;
+        }
+
+        .request-info {
+            background: #111;
+            color: #fff;
+            border-radius: 12px;
+            padding: 35px;
+        }
+
+        .request-info h3 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .request-info p {
+            color: #ddd;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .request-list {
+            list-style: none;
+        }
+
+        .request-list li {
+            margin-bottom: 15px;
+            padding-left: 28px;
+            position: relative;
+            line-height: 1.4;
+        }
+
+        .request-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #d71920;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .quick-options {
+            margin-top: 30px;
+        }
+
+        .quick-options h4 {
+            margin-bottom: 12px;
+        }
+
+        .quick-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .quick-buttons button {
+            background: #222;
+            color: #fff;
+            border: 1px solid #444;
+            padding: 9px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .quick-buttons button:hover {
+            background: #d71920;
+            border-color: #d71920;
+        }
+
+        /* FORMULÁRIO */
+        .request-form {
+            background: #f7f7f7;
+            border: 1px solid #e5e5e5;
+            border-radius: 12px;
+            padding: 30px;
+        }
+
+        .request-form h3 {
+            font-size: 25px;
+            margin-bottom: 8px;
+        }
+
+        .request-form > p {
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .field {
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+        }
+
+        .field.full {
+            grid-column: 1 / -1;
+        }
+
+        .field label {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .field input,
+        .field select,
+        .field textarea {
+            border: 1px solid #d5d5d5;
+            border-radius: 7px;
+            padding: 13px;
+            font-size: 15px;
+            outline: none;
+            background: #fff;
+        }
+
+        .field input:focus,
+        .field select:focus,
+        .field textarea:focus {
+            border-color: #d71920;
+        }
+
+        .field textarea {
+            min-height: 110px;
+            resize: vertical;
+        }
+
+        .file-box {
+            border: 2px dashed #ccc;
+            background: #fff;
+            border-radius: 8px;
+            padding: 18px;
+            text-align: center;
+        }
+
+        .file-box small {
+            display: block;
+            color: #777;
+            margin-top: 8px;
+        }
+
+        .send-button {
+            width: 100%;
+            margin-top: 20px;
+            padding: 16px;
+            border: none;
+            border-radius: 8px;
+            background: #25D366;
+            color: #fff;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .send-button:hover {
+            background: #1ebc59;
+        }
+
+        /* SERVIÇOS */
+        .services {
+            background: #f1f1f1;
+        }
+
+        .services-grid {
+            max-width: 1150px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .service-card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 30px 22px;
+            text-align: center;
+            box-shadow: 0 3px 15px rgba(0,0,0,.06);
+            transition: .2s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-icon {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .service-card h3 {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .service-card p {
+            color: #666;
+            line-height: 1.5;
+            font-size: 14px;
+            margin-bottom: 18px;
+        }
+
+        .service-card button {
+            background: #d71920;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* BENEFÍCIOS */
+        .benefits {
+            background: #fff;
+        }
+
+        .benefits-grid {
+            max-width: 1100px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .benefit {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .benefit strong {
+            display: block;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .benefit p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        /* CONTATO */
+        .contact {
+            background: #111;
+            color: white;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 35px;
+            margin-bottom: 12px;
+        }
+
+        .contact p {
+            color: #ccc;
+            margin-bottom: 25px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #080808;
+            color: #aaa;
+            text-align: center;
+            padding: 30px 6%;
+            font-size: 14px;
+        }
+
+        footer strong {
+            color: #fff;
+        }
+
+        /* WHATSAPP FLUTUANTE */
+        .whatsapp-float {
+            position: fixed;
+            right: 22px;
+            bottom: 22px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #25D366;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 29px;
+            box-shadow: 0 5px 20px rgba(0,0,0,.25);
+            z-index: 9999;
+        }
+
+        /* RESPONSIVO */
+        @media (max-width: 900px) {
+            header {
+                flex-wrap: wrap;
+            }
+
+            .search {
+                order: 3;
+                max-width: none;
+                flex-basis: 100%;
+            }
+
+            .request-box {
+                grid-template-columns: 1fr;
+            }
+
+            .services-grid,
+            .benefits-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            nav {
+                overflow-x: auto;
+                justify-content: flex-start;
+                white-space: nowrap;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .topbar {
+                justify-content: center;
+                text-align: center;
+            }
+
+            .topbar span:first-child {
+                display: none;
+            }
+
+            header {
+                padding: 15px 5%;
+            }
+
+            .header-whatsapp {
+                font-size: 13px;
+            }
+
+            section {
+                padding: 55px 5%;
+            }
+
+            .hero {
+                min-height: 500px;
+                padding: 55px 5%;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .section-title h2 {
+                font-size: 29px;
+            }
+
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .field.full {
+                grid-column: auto;
+            }
+
+            .services-grid,
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .request-info,
+            .request-form {
+                padding: 23px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- TOPO -->
+    <div class="topbar">
+        <span>Especialistas em caminhões</span>
+        <span>Atendimento pelo WhatsApp: (42) 99961-1059</span>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+
+        <div class="logo">
+            ITALIANO
+            <span>RECUPERADORA</span>
+        </div>
+
+        <div class="search">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Digite o modelo ou peça que procura..."
+                onkeydown="searchPart(event)"
+            >
+
+            <button onclick="searchPart()">
+                Buscar
+            </button>
+        </div>
+
+        <a
+            class="header-whatsapp"
+            href="https://wa.me/5542999611059"
+            target="_blank"
+        >
+            seja bem vindo
+        </a>
+
+    </header>
+
+    <!-- MENU -->
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#pecas">Peças</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+
+        <div class="hero-content">
+
+            <h1>
+                Peças para <span>caminhões</span>
+                e recuperação especializada
+            </h1>
+
+            <p>
+                Encontre a peça que você precisa ou solicite um orçamento.
+                Trabalhamos com peças para caminhões, recuperação de cabines,
+                funilaria, pintura e recuperação de peças.
+            </p>
+
+            <div class="buttons">
+
+                <a
+                    href="#pecas"
+                    class="btn btn-red"
+                >
+                    🔎 Encontrar minha peça
+                </a>
+
+                <a
+                    href="#servicos"
+                    class="btn btn-dark"
+                >
+                    Nossos serviços
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PEÇAS / SOLICITAÇÃO -->
+    <section class="request-section" id="pecas">
+
+        <div class="section-title">
+
+            <h2>Encontre sua peça</h2>
+
+            <p>
+                Não temos catálogo fechado. Informe o que você procura
+                e nossa equipe verifica a disponibilidade para você.
+            </p>
+
+        </div>
+
+        <div class="request-box">
+
+            <!-- INFORMAÇÕES -->
+            <div class="request-info">
+
+                <h3>Está procurando uma peça?</h3>
+
+                <p>
+                    Envie os dados do seu caminhão e descreva a peça que
+                    você precisa. Nossa equipe irá verificar e responder
+                    diretamente pelo WhatsApp.
+                </p>
+
+                <ul class="request-list">
+
+                    <li>
+                        Peças para diversos modelos de caminhões
+                    </li>
+
+                    <li>
+                        Atendimento rápido pelo WhatsApp
+                    </li>
+
+                    <li>
+                        Você pode informar código ou referência da peça
+                    </li>
+
+                    <li>
+                        Pode enviar uma foto para facilitar a identificação
+                    </li>
+
+                    <li>
+                        Também fazemos recuperação de peças e cabines
+                    </li>
+
+                </ul>
+
+                <div class="quick-options">
+
+                    <h4>O que você procura?</h4>
+
+                    <div class="quick-buttons">
+
+                        <button onclick="setPart('Peça de cabine')">
+                            Cabine
+                        </button>
+
+                        <button onclick="setPart('Peça de funilaria')">
+                            Funilaria
+                        </button>
+
+                        <button onclick="setPart('Peça elétrica')">
+                            Elétrica
+                        </button>
+
+                        <button onclick="setPart('Iluminação')">
+                            Iluminação
+                        </button>
+
+                        <button onclick="setPart('Peça de motor')">
+                            Motor
+                        </button>
+
+                        <button onclick="setPart('Peça de suspensão')">
+                            Suspensão
+                        </button>
+
+                        <button onclick="setPart('Outra peça')">
+                            Outra
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- FORMULÁRIO -->
+            <form
+                class="request-form"
+                id="partForm"
+                onsubmit="sendPartRequest(event)"
+            >
+
+                <h3>Solicite sua peça</h3>
+
+                <p>
+                    Preencha os dados abaixo e envie sua solicitação.
+                </p>
+
+                <div class="form-grid">
+
+                    <div class="field">
+
+                        <label for="nome">
+                            Seu nome
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nome"
+                            placeholder="Digite seu nome"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="field">
+
+                        <label for="clienteWhatsapp">
+                            Seu WhatsApp
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="clienteWhatsapp"
+                            placeholder="(42) 99999-9999"
+                        >
+
+                    </div>
+
+                    <div class="field">
+
+                        <label for="marca">
+                            Marca do caminhão
+                        </label>
+
+                        <select id="marca" required>
+
+                            <option value="">
+                                Selecione
+                            </option>
+
+                            <option>Mercedes-Benz</option>
+                            <option>Volkswagen</option>
+                            <option>Volvo</option>
+                            <option>Scania</option>
+                            <option>Iveco</option>
+                            <option>Ford</option>
+                            <option>DAF</option>
+                            <option>Outra</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="field">
+
+                        <label for="modelo">
+                            Modelo
+                        </label>
+
+                        <input
+                            type="text"
+                            id="modelo"
+                            placeholder="Ex.: Atego 2426"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="field">
+
+                        <label for="ano">
+                            Ano
+                        </label>
+
+                        <input
+                            type="text"
+                            id="ano"
+                            placeholder="Ex.: 2010"
+                        >
+
+                    </div>
+
+                    <div class="field">
+
+                        <label for="tipo">
+                            Tipo de peça
+                        </label>
+
+                        <input
+                            type="text"
+                            id="tipo"
+                            placeholder="Ex.: Painel, porta, farol..."
+                            required
+                        >
+
+                    </div>
+
+                    <div class="field full">
+
+                        <label for="descricao">
+                            Descreva o que você precisa
+                        </label>
+
+                        <textarea
+                            id="descricao"
+                            placeholder="Informe detalhes da peça, código, lado direito/esquerdo, condições, etc."
+                        ></textarea>
+
+                    </div>
+
+                    <div class="field full">
+
+                        <label>
+                            Foto da peça (opcional)
+                        </label>
+
+                        <div class="file-box">
+
+                            <input
+                                type="file"
+                                id="foto"
+                                accept="image/*"
+                            >
+
+                            <small>
+                                Se tiver uma foto, selecione aqui.
+                                Você poderá anexá-la diretamente no WhatsApp.
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <button
+                    type="submit"
+                    class="send-button"
+                >
+                    📱 Solicitar pelo WhatsApp
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="services" id="servicos">
+
+        <div class="section-title">
+
+            <h2>Nossos serviços</h2>
+
+            <p>
+                Além de peças, somos especializados em recuperação
+                e reparos para caminhões.
+            </p>
+
+        </div>
+
+        <div class="services-grid">
+
+            <div class="service-card">
+
+                <div class="service-icon">🚛</div>
+
+                <h3>Recuperação de Cabine</h3>
+
+                <p>
+                    Recuperação e restauração de cabines de caminhões,
+                    deixando a estrutura pronta novamente.
+                </p>
+
+                <button onclick="serviceRequest('Recuperação de cabine')">
+                    Solicitar orçamento
+                </button>
+
+            </div>
+
+            <div class="service-card">
+
+                <div class="service-icon">🔨</div>
+
+                <h3>Funilaria</h3>
+
+                <p>
+                    Serviços de funilaria e reparação de danos em
+                    cabines e componentes de caminhões.
+                </p>
+
+                <button onclick="serviceRequest('Funilaria')">
+                    Solicitar orçamento
+                </button>
+
+            </div>
+
+            <div class="service-card">
+
+                <div class="service-icon">🎨</div>
+
+                <h3>Pintura</h3>
+
+                <p>
+                    Pintura e acabamento para recuperação da aparência
+                    do caminhão.
+                </p>
+
+                <button onclick="serviceRequest('Pintura')">
+                    Solicitar orçamento
+                </button>
+
+            </div>
+
+            <div class="service-card">
+
+                <div class="service-icon">⚙️</div>
+
+                <h3>venda de peças</h3>
+
+                <p>
+                    venda de peças e componentes para caminhões.
+                </p>
+
+                <button onclick="serviceRequest('Recuperação de peças')">
+                    verificar preços
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- BENEFÍCIOS -->
+    <section class="benefits">
+
+        <div class="section-title">
+
+            <h2>Por que escolher a Italiano?</h2>
+
+        </div>
+
+        <div class="benefits-grid">
+
+            <div class="benefit">
+
+                <strong>🚛 Especialistas em caminhões</strong>
+
+                <p>
+                    Atendimento focado exclusivamente no segmento
+                    de caminhões.
+                </p>
+
+            </div>
+
+            <div class="benefit">
+
+                <strong>📱 Atendimento direto</strong>
+
+                <p>
+                    Fale diretamente com nossa equipe pelo WhatsApp.
+                </p>
+
+            </div>
+
+            <div class="benefit">
+
+                <strong>🔧 Peças e recuperação</strong>
+
+                <p>
+                    Soluções para peças, cabines, funilaria e pintura.
+                </p>
+
+            </div>
+
+            <div class="benefit">
+
+                <strong>📸 Identificação por foto</strong>
+
+                <p>
+                    Não sabe o nome da peça? Envie uma foto para
+                    facilitar a identificação.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTATO -->
+    <section class="contact" id="contato">
+
+        <h2>Precisa de uma peça?</h2>
+
+        <p>
+            Fale agora com a Italiano Recuperadora pelo WhatsApp.
+        </p>
+
+        <a
+            href="https://wa.me/5542999611059?text=Olá!%20Gostaria%20de%20informações%20sobre%20uma%20peça%20para%20caminhão."
+            target="_blank"
+            class="btn btn-red"
+        >
+            📱 Falar pelo WhatsApp
+        </a>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <strong>ITALIANO RECUPERADORA</strong>
+
+        <p>
+            Peças, recuperação, funilaria e pintura para caminhões.
+        </p>
+
+        <p>
+            WhatsApp: (42) 99961-1059
+        </p>
+
+        <p style="margin-top:15px;">
+            © 2026 Italiano Recuperadora - Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+    <!-- WHATSAPP FLUTUANTE -->
+    <a
+        class="whatsapp-float"
+        href="https://wa.me/5542999611059?text=Olá!%20Gostaria%20de%20informações%20sobre%20uma%20peça%20para%20caminhão."
+        target="_blank"
+        aria-label="Falar no WhatsApp"
+    >
+        ☎
+    </a>
+
+
+    <script>
+
+        // NÚMERO DO WHATSAPP DA ITALIANO RECUPERADORA
+        const whatsappNumber = "5542999611059";
+
+
+        // SELECIONA UMA CATEGORIA DE PEÇA
+        function setPart(tipo) {
+
+            document.getElementById("tipo").value = tipo;
+
+            document.getElementById("pecas").scrollIntoView({
+                behavior: "smooth"
+            });
+
+            document.getElementById("tipo").focus();
+        }
+
+
+        // ENVIA SOLICITAÇÃO DE PEÇA
+        function sendPartRequest(event) {
+
+            event.preventDefault();
+
+            const nome =
+                document.getElementById("nome").value;
+
+            const clienteWhatsapp =
+                document.getElementById("clienteWhatsapp").value;
+
+            const marca =
+                document.getElementById("marca").value;
+
+            const modelo =
+                document.getElementById("modelo").value;
+
+            const ano =
+                document.getElementById("ano").value;
+
+            const tipo =
+                document.getElementById("tipo").value;
+
+            const descricao =
+                document.getElementById("descricao").value;
+
+            const foto =
+                document.getElementById("foto").files[0];
+
+
+            let mensagem =
+                "Olá! Sou " + nome + ".\n\n" +
+
+                "Gostaria de consultar uma peça para caminhão.\n\n" +
+
+                "🚛 *Dados do caminhão:*\n" +
+                "Marca: " + marca + "\n" +
+                "Modelo: " + modelo + "\n" +
+                "Ano: " + (ano || "Não informado") + "\n\n" +
+
+                "🔧 *Peça procurada:*\n" +
+                tipo + "\n\n" +
+
+                "📝 *Detalhes:*\n" +
+                (descricao || "Não informado") + "\n\n";
+
+
+            if (clienteWhatsapp) {
+
+                mensagem +=
+                    "📱 Meu WhatsApp: " +
+                    clienteWhatsapp +
+                    "\n\n";
+
+            }
+
+
+            if (foto) {
+
+                mensagem +=
+                    "📸 Tenho uma foto da peça para enviar. " +
+                    "Vou anexá-la nesta conversa.\n\n";
+
+            }
+
+
+            mensagem +=
+                "Aguardo informações sobre disponibilidade e valor. Obrigado!";
+
+
+            const url =
+                "https://wa.me/" +
+                whatsappNumber +
+                "?text=" +
+                encodeURIComponent(mensagem);
+
+
+            window.open(url, "_blank");
+
+
+            if (foto) {
+
+                setTimeout(function() {
+
+                    alert(
+                        "O WhatsApp foi aberto. Agora é só anexar a foto da peça na conversa."
+                    );
+
+                }, 1000);
+
+            }
+
+        }
+
+
+        // ORÇAMENTO DE SERVIÇO
+        function serviceRequest(service) {
+
+            const mensagem =
+                "Olá! Gostaria de solicitar um orçamento para o serviço de *" +
+                service +
+                "*.\n\n" +
+                "Gostaria de obter mais informações.";
+
+            const url =
+                "https://wa.me/" +
+                whatsappNumber +
+                "?text=" +
+                encodeURIComponent(mensagem);
+
+            window.open(url, "_blank");
+        }
+
+
+        // BUSCA
+        function searchPart(event) {
+
+            if (event && event.key && event.key !== "Enter") {
+                return;
+            }
+
+            const search =
+                document.getElementById("searchInput").value.trim();
+
+            if (!search) {
+
+                document.getElementById("pecas").scrollIntoView({
+                    behavior: "smooth"
+                });
+
+                return;
+            }
+
+
+            document.getElementById("tipo").value = search;
+
+
+            document.getElementById("pecas").scrollIntoView({
+                behavior: "smooth"
+            });
+
+
+            document.getElementById("tipo").focus();
+
+        }
+
+    </script>
+
+</body>
+</html>
